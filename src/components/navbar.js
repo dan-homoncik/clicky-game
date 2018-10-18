@@ -6,7 +6,7 @@ const NavBar = ({ score, topScore, message }) => {
 			<nav>
 				<div className='nav-wrapper row blue center-align flow-text'>
 					<div className='col s4'>
-						<a href='/'><b>Clicky Game</b></a>
+						<a href='/'><b> X-Men Memory Click Game</b></a>
 					</div>
 					<div className='col s4'>
 						<span>{message}</span>

@@ -1,0 +1,57 @@
+.nav-wrapper {
+	font: normal "Marvel", sans-serif;
+	color: yellow;
+	text-shadow: px 0 1px rgb(246, 5, 10);
+}
+
+b {
+	color: yellow;
+}
+
+.parallax-container {
+	min-height: 400px;
+	height: auto;
+	vertical-align: bottom;
+	color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+	width: 100%;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border: none;
+	font: normal 100px/normal "Marvel", sans-serif;
+	color: yellow;
+	text-align: center;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-shadow: 5px 0 1px rgb(30, 242, 241);
+}
+
+.divider {
+	margin: 20px 0 20px 0;
+}
+
+.parallax {
+	vertical-align: bottom;
+}
+
+.card {
+	border: 5px solid white;
+}
+
+.card:hover {
+	cursor: pointer;
+}
+
+.card-image {
+	padding: 10%;
+
+}
+
+.parallax img {
+	width: 100%;
+}

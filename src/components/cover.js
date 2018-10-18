@@ -11,7 +11,7 @@ const Cover = () => {
 				</div>
 			</div>
 			<div className='parallax'>
-				<img src='assets/img/cover.jpg' alt='Cover' />
+				<img src='assets/img/xmen.jpg' alt='Cover' />
 			</div>
 		</div>
 	);

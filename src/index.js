@@ -5,18 +5,17 @@ import _ from 'lodash';
 import NavBar from './components/navbar';
 import Cover from './components/cover';
 import Container from './components/container';
-import Footer from './components/footer';
 
-const characters = ['Butters', 'Eric', 'Ike', 'Kenny', 'Kyle', 'Lisa', 'Liza', 'Maria', 'Phillip', 'Premise', 'Schwartz', 'Shelly', 'Stan', 'Timmy', 'Token', 'Wendy'];
+const characters = ['Apocalypse', 'Archangel', 'Beast', 'Colossus', 'Cyclops', 'Gambit', 'Iceman', 'Jeangrey', 'Jubilee', 'Juggernaut', 'Magneto', 'Mystique', 'Nightcrawler', 'Professorx', 'Psylocke', 'Quicksilver', 'Rogue', 'Sabretooth', 'Storm', 'Wolverine'];
 
-const colors = ['red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green', 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange'];
+const colors = ['white', 'pink', 'fuchsia', 'purple', 'deep-purple', 'indigo', 'navy', 'blue', 'light-blue', 'cyan', 'aqua', 'teal', 'green', 'light-green', 'olive', 'lime', 'yellow', 'amber', 'orange', 'deep-orange'];
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			info: 'Click an image to begin!',
+			info: 'Click on an X-Man to begin!',
 			score: 0,
 			topScore: 0,
 			characters: characters,
@@ -31,7 +30,7 @@ class App extends Component {
 	topScoreUpdater(currentScore, currentTopScore, name) {
 		currentScore++;
 		_.delay(() => {
-			this.setState({ info: 'Choose your next character!' });
+			this.setState({ info: 'Choose your next X-Man!' });
 		}, 500);
 		if (currentScore >= currentTopScore) {
 			return this.setState({ score: currentScore, topScore: currentScore, info: `${name} (Correct!)` });
@@ -74,7 +73,7 @@ class App extends Component {
 					characters={this.state.characters}
 					onImageClick={name => { this.handleSelectCharacters(name) }}
 				/>
-				<Footer />
+
 			</div>
 		);
 	};
